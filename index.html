@@ -9,11 +9,6 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
@@ -26,17 +21,46 @@
   <body>
     <nav class="navbar navbar-light bg-light navbar-expand-md">
       <a href="#" class="navbar-brand ms-2">Whiskey Drop</a>
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item me-2">
-          <a href="#" class="nav-link active">Home</a>
-        </li>
-        <li class="nav-item me-2"><a href="#" class="nav-link">About</a></li>
-        <li class="nav-item me-2"><a href="#" class="nav-link">contac</a></li>
-        <li class="nav-item me-2 d-block d-md-none">
-          <a href="#" class="nav-link">Sign In / Sing Up</a>
-        </li>
-      </ul>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item me-2">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item me-2"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >whiskeys</a
+            >
+            <div class="dropdown-menu">
+              <a href="" class="dropdown-item">Irish</a>
+              <a href="" class="dropdown-item">Scoth</a>
+              <a href="" class="dropdown-item">Japanese</a>
+              <a href="" class="dropdown-item">American</a>
+            </div>
+          </li>
 
+          <li class="nav-item me-2"><a href="#" class="nav-link">contac</a></li>
+          <li class="nav-item me-2 d-block d-md-none">
+            <a href="#" class="nav-link">Sign In / Sing Up</a>
+          </li>
+        </ul>
+      </div>
       <div class="d-none d-md-flex">
         <p class="navbar-text my-auto me-2">
           <i>Great whiskey delivered to your door!</i>
@@ -44,8 +68,8 @@
         <a href="#" class="align-self-center me-2">Sign in/ Sing up</a>
       </div>
     </nav>
-    <div class="row d-none d-sm-block">
-      <div class="col-12">
+    <div class="row d-none d-sm-block p-2">
+      <div class="col-12 text-center">
         <div class="alert alert-warning">
           <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month
           subscription for the price of 6!
@@ -56,7 +80,7 @@
     <article class="container mt-3">
       <!-- Callout -->
       <div class="row">
-        <div class="col-12 my-5">
+        <div class="col-12 my-2">
           <section
             class="callout p-2 mb-4 bg-body-tertiary rounded-3 text-center"
           >
@@ -67,7 +91,7 @@
               <span class="d-inline d-sm-none"><br /></span>
               <mark><strong> First one is free!</strong></mark>
             </p>
-            <button class="btn btn-success btn-lg">Sign Up!</button>
+            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signupModule">Sign Up!</button>
             <p class="fw-light">
               <small
                 >You must be over 18 to sing up to our service. Please, drink
@@ -83,7 +107,7 @@
       <!-- Quotes -->
       <section class="quotes">
         <div class="row">
-          <div class="col-12 my-5">
+          <div class="col-12 my-2">
             <h2 class="text-uppercase">Quotes:</h2>
           </div>
         </div>
@@ -184,46 +208,46 @@
         </div>
       </section>
       <!-- /.features -->
-      <!--Monthly favorites-->
-      <!-- <h2 class="text-uppercase">Monthly favorites</h2>
-
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Origin</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table> -->
-      <!--/.Monthly favorites-->
     </article>
+
+  <!-- modal window -->
+    <div class="modal" tabindex="-1" id="signupModule">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sign UP</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form class="p-5">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Repeat Password</label>
+              <input type="password2" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
