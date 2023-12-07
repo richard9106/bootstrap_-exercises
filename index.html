@@ -15,83 +15,105 @@
       integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
 
     <title>Whiskey Drop | Taste a new whiskey every month</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light navbar-expand-md">
-      <a href="#" class="navbar-brand ms-2">Whiskey Drop</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item me-2">
-            <a href="#" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item me-2"><a href="#" class="nav-link">About</a></li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              >whiskeys</a
-            >
-            <div class="dropdown-menu">
-              <a href="" class="dropdown-item">Irish</a>
-              <a href="" class="dropdown-item">Scoth</a>
-              <a href="" class="dropdown-item">Japanese</a>
-              <a href="" class="dropdown-item">American</a>
+    <div class="container-fluid navalert-container position-absolute top-0 start-0 w-100 h-100">
+      <div class="container-fluid alert-container">
+        <div class="row d-none d-sm-block">
+          <div class="col-12 text-center">
+            <div class="site-wide-alert alert alert-warning">
+              <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month
+              subscription for the price of 6!
+              <a href="#" class="">See here for more details</a>
             </div>
-          </li>
-
-          <li class="nav-item me-2"><a href="#" class="nav-link">contac</a></li>
-          <li class="nav-item me-2 d-block d-md-none">
-            <a href="#" class="nav-link">Sign In / Sing Up</a>
-          </li>
-        </ul>
-      </div>
-      <div class="d-none d-md-flex">
-        <p class="navbar-text my-auto me-2">
-          <i>Great whiskey delivered to your door!</i>
-        </p>
-        <a href="#" class="align-self-center me-2">Sign in/ Sing up</a>
-      </div>
-    </nav>
-    <div class="row d-none d-sm-block p-2">
-      <div class="col-12 text-center">
-        <div class="alert alert-warning">
-          <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month
-          subscription for the price of 6!
-          <a href="">See here for more details</a>
+          </div>
         </div>
       </div>
+      <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        <a href="#" class="navbar-brand ms-2">Whiskey Drop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-2">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >whiskeys</a
+              >
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Irish</a>
+                <a href="" class="dropdown-item">Scoth</a>
+                <a href="" class="dropdown-item">Japanese</a>
+                <a href="" class="dropdown-item">American</a>
+              </div>
+            </li>
+
+            <li class="nav-item me-2">
+              <a href="#" class="nav-link">contac</a>
+            </li>
+            <li class="nav-item me-2 d-block d-md-none">
+              <a href="#" class="nav-link ">Sign In / Sing Up</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-md-flex">
+          <p class="navbar-text my-auto me-2">
+            <i>Great whiskey delivered to your door!</i>
+          </p>
+          <a href="#" class="sg align-self-center me-2 btn btn--cta btn--red">Sign in/ Sing up</a>
+        </div>
+      </nav>
     </div>
-    <article class="container mt-3">
+    <!-- End Nav -->
+    <div class="container-fluid callout-container">
       <!-- Callout -->
       <div class="row">
         <div class="col-12 my-2">
-          <section
-            class="callout p-2 mb-4 bg-body-tertiary rounded-3 text-center"
-          >
-            <h1>The finest whiskeys delivered to your doorstep.</h1>
+          <section class="callout p-2 mb-4 rounded-3 text-center jumbotron">
+            <h1 class="jumbotron-header">
+              The finest whiskeys delivered to your doorstep.
+            </h1>
+            <hr class="block-divider mx-auto block-divider-orange" />
             <p class="lead">
               Sign up today to start receiving the world's best whiskeys every
               month. <s class="d-none d-sm-inline">$19.99</s>
               <span class="d-inline d-sm-none"><br /></span>
               <mark><strong> First one is free!</strong></mark>
             </p>
-            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signupModule">Sign Up!</button>
+            <button
+              class="btn btn--red btn--cta btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModule"
+            >
+              Sign Up!
+            </button>
             <p class="fw-light">
               <small
                 >You must be over 18 to sing up to our service. Please, drink
@@ -102,18 +124,20 @@
         </div>
       </div>
       <!-- /.callout -->
-      <hr />
+    </div>
 
-      <!-- Quotes -->
-      <section class="quotes">
+    <!-- Quotes -->
+    <div class="container quotes-container">
+      <section class="quotes content-container">
         <div class="row">
-          <div class="col-12 my-2">
+          <div class="col-12 my-2 text-center">
             <h2 class="text-uppercase">Quotes:</h2>
+            <hr class="block-divider block-divider--short mx-auto">
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6">
-            <div class="media">
+            <div class="media d-flex">
               <img
                 src="images/girl-image.png"
                 class="rounded-circle me-3"
@@ -133,7 +157,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6">
-            <div class="media">
+            <div class="media d-flex">
               <img
                 src="images/guy-image.png"
                 class="rounded-circle me-3"
@@ -151,21 +175,23 @@
           </div>
         </div>
       </section>
-      <!-- /.quotes -->
-      <hr />
+    </div>
+    <!-- /.quotes -->
 
-      <!-- Features -->
-      <section class="features">
+    <!-- Features -->
+    <div class="features-container">
+      <section class="features content-container content-container--red">
         <div class="row">
-          <div class="col-12 my-5">
+          <div class="col-12 my-5 text-center">
             <h2 class="text-uppercase">Features:</h2>
+            <hr class="block-divider block-divider--short mx-auto block-divider-white">
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4">
             <div class="feature">
               <h3>
-                <i class="fas fa-gift d-none d-sm-inline"></i> Feature 1
+                <i class="fas fa-gift d-none d-sm-block"></i> Feature 1
                 <span class="badge text-bg-success">New!</span>
               </h3>
               <p>
@@ -180,7 +206,7 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="feature">
               <h3>
-                <i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2
+                <i class="fas fa-credit-card d-none d-sm-block"></i> Feature 2
               </h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -194,7 +220,7 @@
           <div class="col-12 d-md-none d-lg-block col-lg-4">
             <div class="feature">
               <h3>
-                <i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3
+                <i class="fas fa-times-circle d-none d-sm-block"></i> Feature 3
               </h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -207,37 +233,62 @@
           </div>
         </div>
       </section>
-      <!-- /.features -->
-    </article>
+    </div>
+    <!-- /.features -->
 
-  <!-- modal window -->
+    <!-- modal window -->
     <div class="modal" tabindex="-1" id="signupModule">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">Sign UP</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <form class="p-5">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Repeat Password</label>
-              <input type="password2" class="form-control" id="exampleInputPassword1">
+              <label for="exampleInputPassword1" class="form-label"
+                >Repeat Password</label
+              >
+              <input
+                type="password2"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
             </div>
             <button type="submit" class="btn btn-success">Submit</button>
           </form>
         </div>
       </div>
     </div>
-    
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

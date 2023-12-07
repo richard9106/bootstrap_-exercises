@@ -1,0 +1,121 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.alert-container .col-12 {
+    padding-left:0 ;
+    padding-right:0;
+}
+.navalert-container{
+padding: 0 0;
+}
+.site-wide-alert{
+    border-radius: 0;
+    margin-bottom:0;
+    padding: 2px;
+    background-color: #eec802;
+    border-color: #eec802;
+}
+.callout-container {
+    padding-top: 70px;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/whiskey-background.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quotes-container {
+}
+.features-container {
+}
+
+/*block dividers*/
+.block-divider {
+  width: 75px;
+  height: 5px;
+  border: 0;
+  background-color: rgb(82, 81, 81);
+  opacity: 1;
+  
+}
+.block-divider-orange {
+  background-color: #f1421b;
+}
+.block-divider--short {
+  width: 35px;
+}
+.block-divider-white{
+    background-color: white;
+}
+/*NavBar*/
+/*sign in sign up*/
+.sg{
+    font-size: small;
+}
+.bg-dark{
+    background-color: black!important;
+}
+
+/* jumbotron-header and callout */
+.jumbotron,
+.lead {
+  margin: 25px 0;
+  color: #a7a7a7;
+}
+.jumbotron-header {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.jumbotron small {
+  font-size: 60%;
+  font-style: italic;
+  color: #d0d0d0;
+}
+
+/*button section*/
+
+.btn--cta {
+  font-weight: bold;
+  border-radius: 23px;
+  width: 160px;
+}
+.btn--red {
+  color: white;
+  background-color: #f05f40;
+  border-color: #f05f40;
+}
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+  background-color: #f04b26;
+  border-color: #f05f40;
+}
+.content-container{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.content-container--red{
+    background-color: #f04b26;
+    color: white;
+}
+
+/*FEATURES*/
+.feature{
+    text-align: center;
+    margin: 0 0 4px;
+}
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
